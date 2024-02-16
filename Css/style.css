@@ -1,0 +1,278 @@
+  /*
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Serif', serif;
+    */
+  
+  /* 
+  Paleta Azul Marinho e Bege:
+
+  #778899 (Cinza-ardósia)
+  #483D8B (Azul-escuro)
+  #E6E6FA (Lavanda-claro)
+  #F5F5DC (Bege)
+   */
+    
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #F5F5DC;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Parte de cima do site */
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5DC;
+
+}
+
+/* Links */
+
+.navbar a{
+    font-size: 13pt;
+    font-weight: bolder;
+    color: #483D8B;
+    text-decoration: none;
+    padding: 18px 15px;
+}
+
+.navbar a:hover{
+    color: #FFA500;
+    border-top: 4px solid #483D8B;
+    padding: 18px 25px;
+}
+
+#creditos{
+    background-color: #483D8B;
+    color: white;
+    border-radius: 15px;
+    margin-right: 8%;
+    margin-left: 10%;
+}
+
+#creditos:hover{
+    border: none;
+    background-color: #FFA500;
+}
+
+/* Parte esquerda com Logo */
+.navbarE{
+    /* border: 1px solid red; */
+    flex: 20%;
+    margin-left: 8%;
+}
+
+/* Logo */
+.navbarE h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 36pt;
+    color: #483D8B;
+}
+
+/* Parte Direita com menu */
+.navbarD{
+    /* border: 1px solid blue; */
+    flex: 72%;
+    text-align: right;
+    padding: 20px 15px;
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.headerT{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    color: #483D8B;
+    text-align: center;
+}
+
+.headline{
+    margin-left: 8%;
+    flex: 42%;
+    /* border: 1px solid blue; */
+    font-family: 'Noto Serif', serif;
+    
+
+    /* Estilização da fonte */
+    
+    font-weight: bolder;
+    font-size: 20px;
+    color: #483D8B;
+}
+
+.sobre{
+    max-width: 80%;
+}
+
+.sobre p{
+    margin:auto;
+    padding-bottom: 10px;
+    font-size: 13pt;
+}
+
+.chamada-1{
+    font-size: 18pt;
+    width: 100%;
+    letter-spacing: 14px;
+    font-weight: bold;
+    margin: auto;
+}
+   
+.chamada-2{
+    font-size: 30pt;
+    width: 100%;
+    margin: auto;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+   
+.chamada-3{
+    font-size: 12pt;
+    margin: auto;
+}
+
+.img-headline{
+    flex: 42%;
+    margin-right: 8%;
+    /* border: 1px solid purple; */
+    text-align: center;
+}
+
+
+    /* Skills destacadas */
+.section{
+    /* Orientação */
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 80px;
+    /* border: 1px solid red; */
+    height: 400px;
+
+    /* Estilização */
+    color: #483D8B;
+    padding: 3%;
+    width: 84%;
+    text-align: center;
+}
+
+    /* Texto de cima */
+
+.headerSk h2{
+    font-family: 'Noto Serif', serif;
+    font-weight: 900;
+    font-size: 30pt;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+    /* Cartões interativos */
+
+.card{
+    border: 2.5px dashed #483D8B;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5%;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    margin: 1%;
+}
+
+
+    /* Titulo card */
+
+.card h3{
+    margin: 0;
+}
+
+    /* Texto de dentro do card */
+
+.textoInterno{
+    padding: 5px;
+    font-weight: 500;
+}
+
+.textoInterno p{
+    margin-bottom: 2px;
+}
+
+.card h3{
+    font-weight: 900;
+    color: #483D8B;
+    margin-top: 5px;
+}
+
+    /* Texto Oculto extra */
+
+.textoOculto{
+    display: none;
+    height: 200px;
+    color: #FFA500;
+}
+
+.card:hover{
+    border: 2.5px dashed #FFA500;
+}
+
+.card:hover .textoOculto{
+    display: block;
+}
+
+.card:hover .containerInterno{
+    display: none;
+}
+
+footer{
+    margin-top: 50px;
+    background-color: #483D8B;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    text-align: center;
+    padding: 10px 0px;
+    background: linear-gradient(180deg, rgba(72,61,139,1) 1%, rgba(35,29,79,1) 33%, rgba(16,9,50,1) 66%, rgba(12,8,40,1) 100%);
+    border-top: 3.5px solid #FFA500;
+}
+
+footer h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 25pt;
+    margin: auto;
+    color: #FFA500;
+}
+
+footer p{
+    font-family: 'Pacifico', cursive;
+    font-size: 20pt;
+    margin: auto;
+    color: #FFA500;
+}
+
+.contato{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+}
